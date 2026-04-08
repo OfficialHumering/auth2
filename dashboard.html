@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>MARS Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #908e8e;
+      color: #fff;
+      height: 100vh;
+      padding: 20px 0;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #d49858;
+    }
+
+    /* Top bar */
+    .topbar {   
+      background: #fff;
+      color: black;
+      height: 60px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+    }
+    .topbar .item {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .topbar .item span {
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    /* Main content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .map-section {
+      background: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .map-section h3 {
+      margin-bottom: 10px;
+    }
+    .map-placeholder {
+      background: #e0e0e0;
+      height: 300px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 300px;
+      font-size: 20px;
+      color: #555;
+    }
+
+    /* Boxes under map */
+    .boxes {
+      display: flex;
+      margin: 20px;
+      gap: 20px;
+    }
+    .box {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .box h4 {
+      margin-bottom: 10px;
+    }
+    .box button {
+      padding: 10px 15px;
+      border: none;
+      background: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .box button:hover {
+      background: #ff3300;
+    }
+
+    /* Right panel */
+    .right-panel {
+      width: 200px;
+      background: #fff;
+      margin-top: 200px;
+      height: 200px;
+      border-radius: 10px;
+      height: fit-content;
+    }
+
+    .fah{
+        width: 75px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2><img  class="fah" src="img/ba4542a4397757edc1bafc054d23df80ad1c77ca.png" alt=""></h2>
+    <ul>
+      <li>Asosiy</li>
+      <li>Kurslarim</li>
+      <li>Eduverse</li>
+      <li>MarsCode</li>
+      <li>Space shop</li>
+    </ul>
+  </div>
+
+  <!-- Main + Right -->
+  <div class="main">
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="item">🔥 <span>1</span></div>
+      <div class="item">🪙 <span>74</span></div>
+      <div class="item">⚡ <span>7990</span></div>
+      <div class="item"><button>Obuna bo‘ling</button></div>
+      <div class="item">🔔</div>
+      <div class="item">👤</div>
+    </div>
+
+    <!-- Map section -->
+    <div class="map-section">
+      <h3>Darajangiz</h3>
+      <div class="map-placeholder"><img src="img/e966992e5ead77e40e709c9fe57e432fe9b2e003.png" alt=""></div>
+      <button>Batafsil</button>
+    </div>
+
+    <!-- Boxes -->
+    <div class="boxes">
+      <div class="box">
+        <h4>Qo‘shimcha dars</h4>
+        <p>Du Se Cho Pa Ju Sha +</p>
+      </div>
+      <div class="box">
+        <h4>Typing</h4>
+        <p>Typing testini aniqlaymiz</p>
+        <button>Play ></button>
+      </div>
+      <div class="box">
+        <h4>Darsni davom ettirish</h4>
+        <button>Boshlash ></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right panel -->
+  <div class="right-panel">
+    <h4>Topshiriqlar</h4>
+    <p>Topshiriqlar topilmadi</p>
+    <a href="#">Barchasi ></a>
+  </div>
+</body>
+</html>

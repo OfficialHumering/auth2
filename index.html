@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>MARS Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("img/6393108b4497ba0a4e81bde6de3c7da46b4b07d3.png") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background:#fff;
+      padding: 30px;
+      border-radius: 10px;
+      color: black;
+      width: 300px;
+      text-align: center;
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background: #ff6600;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background: #ff3300;
+    }
+    .register {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .register a {
+      color: #ffb109;
+      text-decoration: none;
+    }
+
+    .inp{
+        border:solid 2px black;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>MARS Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0a2a66; /* тёмно-синий */
+      display: flex;
+      align-items: center;
+    }
+    .logo span.circle {
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      margin-left: 5px;
+    }
+    .lang {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    .lang img {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+
+
+    .razmer{
+        width: 75px;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+  <div class="login-box">
+    <h2><img class="razmer" src="img/ba4542a4397757edc1bafc054d23df80ad1c77ca.png" alt=""></h2>
+    <p>Spacega xush kelibsiz</p>
+    <input class="inp" type="text" id="username" placeholder="Space ID">
+    <input class="inp" type="password" id="password" placeholder="Parol">
+    <button onclick="login()">Kirish</button>
+    <div class="register">
+      Akkountga ega emasmisiz? <a href="#">Ro’yxatdan o’tish</a>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+     
+      
+      const correctUser = "student";
+      const correctPass = "12345";
+
+      if (user === correctUser && pass === correctPass) {
+        // Перекидываем на другой сайт
+        window.location.href = "dashboard.html  "; 
+      } else {
+        alert("Noto'g'ri login yoki parol!");
+      }
+    }
+  </script>
+</body>
+</html>
